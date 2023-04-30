@@ -1,0 +1,162 @@
+{
+  // Editor
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 27,
+  "editor.fontWeight": "400",
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnPaste": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.linkedEditing": true,
+
+  // Explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": true,
+
+  // workbench
+  "workbench.editor.enablePreview": false,
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "[Night Owl]": {
+      "sideBar.border": "#00e1ff19"
+    }
+  },
+  "workbench.startupEditor": "none",
+
+  // window
+  "window.menuBarVisibility": "toggle",
+
+  // Integrated Terminal
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.defaultProfile.windows": "fish",
+  "terminal.integrated.env.windows": {
+    "TERM_PROGRAM": "vscode"
+  },
+  "terminal.integrated.env.linux": {
+    "TERM_PROGRAM": "vscode"
+  },
+  "terminal.external.linuxExec": "fish",
+
+  // VIM
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-d>": false,
+    "<C-w>": false,
+    "<C-c>": false,
+    "<C-b>": false
+  },
+
+  // emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascriptreact": "jsx"
+  },
+
+  // Settings for Eslint and Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Markdown
+  "markdown.preview.fontSize": 15,
+
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  // javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.paths": false,
+
+  // typescript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.paths": false,
+
+  // dart
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+
+  // prisma
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+
+  // python
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "python.languageServer": "Pylance",
+
+  // copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true,
+    "javascript": true
+  },
+
+  // Others
+  "gitlens.blame.highlight.locations": ["line", "overview", "gutter"],
+  "cSpell.userWords": ["Arfan", "clsx", "fastapi", "pydantic", "Shaif"],
+  "window.zoomLevel": -1
+}
