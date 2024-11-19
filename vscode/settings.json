@@ -47,46 +47,64 @@
   "terminal.external.linuxExec": "fish",
 
   // VIM
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+  // Settings for vscode-neovim
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      // Use lua to execute any logic
+      "command": "vscode-neovim.lua",
+      "args": [
+        [
+          "local code = require('vscode')",
+          "code.action('vscode-neovim.escape')",
+          "code.action('workbench.action.files.save')"
+        ]
+      ]
     }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "b"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
-    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
-  ],
-  "vim.visualModeKeyBindings": [
-    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
-    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "p"],
-      "after": ["\"", "_", "d", "P"]
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-d>": false,
-    "<C-w>": false,
-    "<C-c>": false,
-    "<C-b>": false
   },
+  "vscode-neovim.ctrlKeysForNormalMode": ["r"],
+  // Settings for vscodevim.vim
+  // "vim.easymotion": true,
+  // "vim.incsearch": true,
+  // "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": true,
+  // "vim.hlsearch": true,
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["j", "k"],
+  //     "after": ["<Esc>"]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<leader>", "b"],
+  //     "commands": ["workbench.action.toggleSidebarVisibility"]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindings": [
+  //   { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+  //   { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  // ],
+  // "vim.visualModeKeyBindings": [
+  //   { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+  //   { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<leader>", "p"],
+  //     "after": ["\"", "_", "d", "P"]
+  //   }
+  // ],
+  // "vim.leader": "<space>",
+  // "vim.handleKeys": {
+  //   "<C-a>": false,
+  //   "<C-f>": false,
+  //   "<C-d>": false,
+  //   "<C-w>": false,
+  //   "<C-c>": false,
+  //   "<C-b>": false,
+  //   "<C-p>": false
+  // },
 
   // emmet
   "emmet.includeLanguages": {
@@ -101,7 +119,7 @@
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
 
   // Markdown
@@ -129,7 +147,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
@@ -149,14 +167,50 @@
   // copilot
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": false,
-    "markdown": true,
-    "javascript": true
+    "markdown": false,
+    "scminput": false
   },
 
   // Others
   "gitlens.blame.highlight.locations": ["line", "overview", "gutter"],
-  "cSpell.userWords": ["Arfan", "clsx", "fastapi", "pydantic", "Shaif"],
-  "window.zoomLevel": -1
+  "cSpell.userWords": [
+    "Arfan",
+    "clsx",
+    "fastapi",
+    "pydantic",
+    "Shaif",
+    "tanstack",
+    "CifarX"
+  ],
+  "svelte.enable-ts-plugin": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "window.zoomLevel": -1,
+  "remote.autoForwardPortsSource": "hybrid",
+  "cSpell.enableFiletypes": ["mdx"],
+  "git.autofetch": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "csv-preview.separator": ",",
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "dotenv.enableAutocloaking": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\shaif\\init.vim",
+  "supermaven.enable": {
+    "*": false
+  },
+  "continue.enableTabAutocomplete": true,
+  "codeium.enableConfig": {
+    "*": true,
+    "postcss": true,
+    "mdx": true
+  }
 }
