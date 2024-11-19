@@ -9,7 +9,7 @@ VS Code settings.json file: [settings.json](./settings.json)
 
 ### Extensions:
 
-- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
