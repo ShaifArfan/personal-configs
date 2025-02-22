@@ -29,3 +29,8 @@ VS Code settings.json file: [settings.json](./settings.json)
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
+
+
+Settings for VScode Neovim:
+init file location (win): C:\Users\shaif\AppData\Local\nvim
+Exe file location (win): C:\Program Files\Neovim\bin/nvim.exe
