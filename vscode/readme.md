@@ -31,6 +31,6 @@ VS Code settings.json file: [settings.json](./settings.json)
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
 
-Settings for VScode Neovim:
-init file location (win): C:\Users\shaif\AppData\Local\nvim
-Exe file location (win): C:\Program Files\Neovim\bin/nvim.exe
+### Settings for VScode Neovim:
+- init file location (win): C:\Users\shaif\AppData\Local\nvim
+- Exe file location (win): C:\Program Files\Neovim\bin/nvim.exe
